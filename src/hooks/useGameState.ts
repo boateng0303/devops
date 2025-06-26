@@ -1,17 +1,17 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { Position, Direction, GameState } from '../types/game';
-import {
-  GRID_SIZE,
-  INITIAL_SNAKE,
-  INITIAL_DIRECTION,
-  generateFood,
-  moveSnake,
-  checkCollision,
-  checkFoodCollision,
-  growSnake,
-  isOppositeDirection,
-  calculateSpeed
-} from '../utils/gameLogic';
+// import {
+//   GRID_SIZE,
+//   INITIAL_SNAKE,
+//   INITIAL_DIRECTION,
+//   generateFood,
+//   moveSnake,
+//   checkCollision,
+//   checkFoodCollision,
+//   growSnake,
+//   isOppositeDirection,
+//   calculateSpeed
+// } from '../utils/gameLogic';
 
 export const useGameState = () => {
   const [gameState, setGameState] = useState<GameState>('idle');
